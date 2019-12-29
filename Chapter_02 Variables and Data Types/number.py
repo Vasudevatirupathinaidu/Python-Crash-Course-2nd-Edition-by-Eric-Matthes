@@ -50,3 +50,7 @@ print(x, y, z)
 
 MAX_CONNECTIONS = 5000
 print(MAX_CONNECTIONS)
+
+
+# The Zen of Python by Tim Peters
+import this # Python community's philosophy
