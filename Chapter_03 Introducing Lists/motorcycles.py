@@ -1,6 +1,7 @@
 # Changing, Adding and Removing Elements
 
 # Modifying Elements in a List
+print("\n\n\n")
 print("Modifying Elements in a List")
 motorcycles = ['honda', 'yamaha', 'suzuki']
 print(motorcycles)
@@ -10,11 +11,13 @@ print(motorcycles)
 
 
 # Adding Elements to a List
+print("\n\n\n")
 print("Adding Elements to a List")
 motorcycles.append('honda')
 print(motorcycles)
 
 # Using an empty list
+print("\n\n\n")
 print("Using an empty list")
 motorcycles = []
 motorcycles.append('honda')
@@ -24,6 +27,7 @@ print(motorcycles)
 
 
 # Inserting Elements into a List
+print("\n\n\n")
 print("Inserting Elements into a List")
 motorcycles = ['honda', 'yamaha', 'suzuki']
 motorcycles.insert(1, 'ducati')
@@ -32,6 +36,7 @@ print(motorcycles)
 
 # Removing Elemets from a list
 # Removing an item using the del statement
+print("\n\n\n")
 print("Removing an item using the del statement")
 motorcycles = ['honda', 'yamaha', 'suzuki']
 print(motorcycles)
@@ -44,6 +49,7 @@ print(motorcycles)
 
 
 # Removing an item using the pop() method
+print("\n\n\n")
 print("Removing an item using the pop() method")
 motorcycles = ['honda', 'yamaha', 'suzuki']
 print(motorcycles)
@@ -54,6 +60,7 @@ print(f"The last motorcycle I owned was a {popped_motorcycle.title()}")
 
 
 # Remove an item by value
+print("\n\n\n")
 print("Remove an item by value")
 motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
 print(motorcycles)
