@@ -18,7 +18,7 @@ print(f"Hello, {names[2]}! Good to see you again.")
 print(f"Hello, {names[3]}! Good to see you again.")
 
 
-# Your Own List
+# Your Own list
 print("\n\n\n")
 print("Your Own List")
 my_list = ['Prestige', 'Inception', 'The Dark Knight']
@@ -82,3 +82,75 @@ del persons[0]
 del persons[0]
 print(persons)
 print("Dinner has been successful. No more guests are in my list")
+
+
+# Seeing the World
+print("\n\n\n")
+print("Seeing the World")
+locations = ['italy', 'bali', 'paris', 'amsterdam', 'london']
+print(locations)
+
+# alphabetical order - temporary
+print(sorted(locations))
+print(locations)
+print(sorted(locations, reverse = True))
+print(locations)
+
+# reverse - permanent
+locations.reverse()
+print(locations)
+locations.reverse()
+print(locations)
+
+# sort - permanent
+locations.sort()
+print(locations)
+locations.sort(reverse = True)
+print(locations)
+
+
+# Dinner Guests
+print("\n\n\n")
+print("Dinner Guests")
+persons = ['albert einstein', 'srinivasa ramanujan', 'leonardo da vinci']
+print(len(persons))
+
+
+# Every Function
+print("\n\n\n")
+print("Every Function")
+group = []
+group.append('hola')
+group.append('cat')
+group.insert(1, 'vizag')
+group.append('drawing')
+group.append('pen spinning')
+print(group)
+last_item = group.pop()
+print(last_item)
+print(group)
+group.append('meditation')
+print(group)
+del group[0]
+print(group)
+group.insert(0, 'hello')
+print(group)
+
+# sort method - permanent
+group.sort()
+print(group)
+group.sort(reverse = True)
+print(group)
+
+# sorted function- permanent
+group = ['hello', 'vizag', 'cat', 'drawing', 'meditation']
+print(sorted(group))
+print(group)
+print(sorted(group, reverse = True))
+print(group)
+
+# reverse method- permanent
+group.reverse()
+print(group)
+group.reverse()
+print(group)
