@@ -118,3 +118,9 @@ print(cars)
 print("\n\n\n")
 cars = ['bmw','audi', 'toyota', 'subaru']
 print(len(cars))
+
+
+
+# Avoiding index errors when working with lists
+print("\n\n\n")
+# An index error means Python can’t find an item at the index you requested. IndexError: list index out of range
