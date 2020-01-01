@@ -104,3 +104,19 @@ for pizza in my_pizzas:
 print("\nMy friend's favorite pizzas are:")
 for pizza in friend_pizzas:
 	print(pizza)
+print("\n")
+
+
+# Buffet
+food_items = ('chicken biryani', 'dal rice', 'curd rice', 'lachha paratha', 'paneer')
+for item in food_items:
+	print(item)
+print("\n")
+
+
+# modify one of the items
+# food_items[1] = 'dal fry' - 'tuple' object does not support item assignment
+# print(food_items)
+food_items = ('chicken biryani', 'dal fry', 'khichdi', 'lachha paratha', 'paneer')
+for item in food_items:
+	print(item)
