@@ -67,3 +67,40 @@ print("\n")
 cubes = [value**3 for value in range(1, 11)]
 print(cubes)
 print("\n")
+
+
+
+# Slices
+nolan_movies = ['Memento', 'The Prestige', 'Inception', 'The Dark Knight', 'Interstellar', 'TENET']
+print("The first three items in the list are:")
+print(nolan_movies[:3])
+
+print("\nThree items from the middle of the list are:")
+print(nolan_movies[1:4])
+
+print("\nThe last three items in the list are:")
+print(nolan_movies[-3:])
+
+print("\n")
+
+
+# My pizzas, your pizzas
+my_pizzas = ['chicago pizza', 'greek pizza', 'detroit pizza']
+friend_pizzas = pizzas[:]
+print(my_pizzas)
+print(friend_pizzas)
+my_pizzas.append('california pizza')
+friend_pizzas.append('sicilian pizza')
+
+print("\n")
+print(my_pizzas)
+print(friend_pizzas)
+
+print("\n")
+print("My favorite pizzas are:")
+for pizza in my_pizzas:
+	print(pizza)
+
+print("\nMy friend's favorite pizzas are:")
+for pizza in friend_pizzas:
+	print(pizza)
