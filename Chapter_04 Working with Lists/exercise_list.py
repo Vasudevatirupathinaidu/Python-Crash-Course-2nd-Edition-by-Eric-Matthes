@@ -2,21 +2,21 @@
 pizzas = ['chicago pizza', 'greek pizza', 'detroit pizza']
 print(pizzas)
 for pizza in pizzas:
-	print(f"I like {pizza.title()}!")
+    print(f"I like {pizza.title()}!")
 print("I really love Pizza!")
 print("\n")
 
 # Animals
 animals = ['lion', 'monkey', 'zebra']
 for animal in animals:
-	print(f"Be like a {animal.title()}")
+    print(f"Be like a {animal.title()}")
 print("The animals are part of an ecosystem.")
 print("\n")
 
 
 # Counting to twenty
 for value in range(1, 21):
-	print(value)
+    print(value)
 print("\n")
 
 
@@ -24,7 +24,7 @@ print("\n")
 numbers = list(range(1, 1000001))
 # print(numbers)
 # for number in numbers:
-# 	print(number)
+#   print(number)
 
 # Summing a million
 numbers = list(range(1, 1000001))
@@ -36,7 +36,7 @@ numbers = list(range(1, 1000001))
 
 # Odd numbers
 for value in range(1, 20, 2):
-	print(value)
+    print(value)
 print("\n")
 
 
@@ -44,8 +44,8 @@ print("\n")
 # method 1
 threes = []
 for value in range (1, 11):
-	number = value*3
-	threes.append(number)
+    number = value*3
+    threes.append(number)
 print(threes)
 print("\n")
 
@@ -58,8 +58,8 @@ print("\n")
 # method 1
 cubes = []
 for value in range(1, 11):
-	cube = value**3
-	cubes.append(cube)
+    cube = value**3
+    cubes.append(cube)
 print(cubes)
 print("\n")
 
@@ -99,18 +99,18 @@ print(friend_pizzas)
 print("\n")
 print("My favorite pizzas are:")
 for pizza in my_pizzas:
-	print(pizza)
+    print(pizza)
 
 print("\nMy friend's favorite pizzas are:")
 for pizza in friend_pizzas:
-	print(pizza)
+    print(pizza)
 print("\n")
 
 
 # Buffet
 food_items = ('chicken biryani', 'dal rice', 'curd rice', 'lachha paratha', 'paneer')
 for item in food_items:
-	print(item)
+    print(item)
 print("\n")
 
 
@@ -119,4 +119,10 @@ print("\n")
 # print(food_items)
 food_items = ('chicken biryani', 'dal fry', 'khichdi', 'lachha paratha', 'paneer')
 for item in food_items:
-	print(item)
+    print(item)
+
+
+
+# Converting Tabs to Spaces - If you use a mix of tabs and spaces in your code, it can cause problems in your programs that are difficult to diagnose. To avoid this, you can configure Sublime Text to always use spaces for indentation, even when you press the tab key. Go to View -> Indentation and make sure the Indent Using Spaces option is selected. If it’s not, select it. Also, make sure the Tab Width is set to 4 spaces.
+
+# PEP 8 (Python Enhancement Proposal) https://www.python.org/dev/peps/pep-0008/
