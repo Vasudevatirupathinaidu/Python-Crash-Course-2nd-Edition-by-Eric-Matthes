@@ -156,9 +156,34 @@ print("\n")
 # Checking usernames
 
 current_users = ['ching', 'chang', 'chung', 'ding', 'bing']
-new_users = ['admin', 'magnus', 'ching', 'carlsen', 'ding']
+new_users = ['ADMIN', 'MAGNUS', 'CHING', 'CARLSEN', 'DING']
 for new_user in new_users:
-    if new_user in current_users:
-        print(f"Username {new_user} is available.\n")
-    if new_user not in current_users:
-        print(f"{new_user}, You will need to enter a new username.\n")
+    if new_user.lower() in current_users:
+        print(f"Username {new_user.lower()} is available.\n")
+    if new_user.lower() not in current_users:
+        print(f"{new_user.lower()}, You will need to enter a new username.\n")
+
+
+# Original numbers
+numbers = list(range(1, 10))
+for number in numbers:
+    if number == 1:
+        print("1st")
+    elif number == 2:
+        print("2nd")
+    elif number == 3:
+        print("3rd")
+    elif number == 4:
+        print("4th")
+    elif number == 5:
+        print("5th")
+    elif number == 6:
+        print("6th")
+    elif number == 7:
+        print("7th")
+    elif number == 8:
+        print("8th")
+    elif number == 9:
+        print("9th")
+    else:
+        print("Out of range!")
