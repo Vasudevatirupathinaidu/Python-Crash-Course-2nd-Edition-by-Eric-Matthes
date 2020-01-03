@@ -1,3 +1,4 @@
+
 # Using get() to access values
 alien_0 = {
     'color' : 'green',
@@ -10,3 +11,10 @@ alien_0 = {
 
 point_value = alien_0.get('points', 'No pint value assigned.')
 print(point_value)
+
+
+# Absence of a value gives special value called None. It means "no value exists"
+
+point_value = alien_0.get('points')
+print(point_value)
+
