@@ -102,3 +102,20 @@ print("\n")
 
 languages = {'python', 'ruby', 'python', 'c'}
 print(languages)
+print("\n")
+
+
+# A List inside a dictionary
+
+favorite_languages = {
+    'jen' : ['python', 'ruby'],
+    'sarah' : ['c'],
+    'edward' : ['ruby', 'go'],
+    'phil' : ['python', 'haskell'],
+}
+
+for name, languages in favorite_languages.items():
+    print(f"\n{name.title()}'s favorite language are:")
+    for language in languages:
+        print(f"\t{language.title()}")
+print("\n")
