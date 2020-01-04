@@ -1,3 +1,4 @@
+
 # Person
 
 person = {
@@ -92,3 +93,43 @@ print("\n")
 print('\n'.join([(f"{key.title()}: {value}") for key, value in glossary.items()]))
 print("\n")
 
+
+
+# Rivers
+
+rivers = {
+    'krishna' : 'vijayawada',
+    'yamuna' : 'agra',
+    'kaveri' : 'tiruchirapalli',
+}
+
+for river, city in rivers.items():
+    print(f"The {river} river runs through {city}.")
+print("\n")
+
+for river in rivers.keys():
+    print(river)
+print("\n")
+
+for city in rivers.values():
+    print(city)
+print("\n")
+
+
+# Polling
+
+favorite_languages = {
+    'jen' : 'python',
+    'sarah' : 'c',
+    'edward' : 'ruby',
+    'phil' : 'python',
+}
+
+members = ['phil', 'daniel', 'edward', 'erin', 'sarah']
+
+for member in members:
+    if member in favorite_languages.keys():
+        print(f"{member.title()}, thank you for taking the poll.")
+    else:
+        print(f"{member.title()}, please take our poll.")
+print("\n")
