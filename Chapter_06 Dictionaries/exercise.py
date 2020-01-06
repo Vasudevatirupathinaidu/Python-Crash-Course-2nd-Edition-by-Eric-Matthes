@@ -7,7 +7,7 @@ person = {
     'city' : 'Bangalore',
 }
 
-print(f"Hola! My name is {person['last_name']} {person['first_name']}. I am {person['age']} years old, lives in {person['city']}.")
+print(f"Hola! My name is {person['last_name']} {person['first_name']}. I am {person['age']} years old guy lives in {person['city']}.")
 print("\n")
 
 
@@ -131,4 +131,157 @@ for member in members:
         print(f"{member.title()}, thank you for taking the poll.")
     else:
         print(f"{member.title()}, please take our poll.")
+print("\n")
+
+
+# People
+
+person_1 = {
+    'first_name' : 'vasu',
+    'last_name' : 'bonu',
+    'age' : 27,
+    'city' : 'bangalore',
+}
+
+person_2 = {
+    'first_name' : 'deva',
+    'last_name' : 'bonu',
+    'age' : 26,
+    'city' : 'gurgaon',
+}
+
+person_3 = {
+    'first_name' : 'tiru',
+    'last_name' : 'bonu',
+    'age' : 25,
+    'city' : 'bangalore',
+}
+
+people = [person_1, person_2, person_3]
+
+for person in people:
+    print(person)
+print("\n")
+
+
+# Pets
+
+pet_1 = {
+        'owner_s name': 'vasu',
+        'pet_s name': 'DogA',
+    }
+
+pet_2 = {
+        'owner_s name': 'deva',
+        'pet_s name': 'DogB',
+    }
+
+pet_3 = {
+        'owner_s name': 'tiru',
+        'pet_s name': 'DogC',
+    }
+
+pet_4 = {
+        'owner_s name': 'naidu',
+        'pet_s name': 'DogD',
+    }
+
+
+pets = [pet_1, pet_2, pet_3, pet_4]
+
+for pet in pets:
+    print(f"Pet Owner's name: {pet['owner_s name']}")
+    print(f"Pet's name: {pet['pet_s name']}\n")
+
+
+# Favorite places
+
+favorite_places = {
+    'deva':['goa', 'kochi', 'udupi'],
+    'vasu':['kochi', 'araku', 'shillong'],
+    'tiru':['udupi', 'ladakh', 'west godavari'],
+}
+
+for names, places in favorite_places.items():
+    for place in places:
+        print(f"{(names.title())}'s favorite place is {place.title()}.")
+    print("\n")
+
+
+# Favorite numbers
+
+persons = {
+    'ching' : [5, 2, 9],
+    'chang' : [6, 1],
+    'chung' : [1, 8, 7],
+    'ding' : [9, 3, 6],
+    'ping' : [1, 2],
+    'dang' : [4, 0],
+}
+
+for names, numbers in persons.items():
+    for number in numbers:
+        print(f"{names.title()}'s favorite number is {number}.")
+    print("\n")
+
+
+# Cities
+
+cities = {
+    'vizag': {
+        'country': 'india',
+        'population': '21 lakhs',
+        'favoriteSpot': 'beach',
+    },
+    'bangalore': {
+        'country': 'india',
+        'population': '84 lakhs',
+        'favoriteSpot': 'bangalore palace',
+    },
+    'rajahmundry': {
+        'country': 'india',
+        'population': '4 lakhs',
+        'favoriteSpot': 'godavari arch bridge',
+    },
+}
+
+for name, data in cities.items():
+    print(f"City name {name.title()}: ")
+    for info, data_2 in data.items():
+        print(f"{info.title()}: {data_2.title()}")
+    print("\n")
+
+
+# Extensions
+
+
+favorite_languages = {
+    'jen' : 'c++',
+    'sarah' : 'c',
+    'edward' : 'ruby',
+    'phil' : 'javascript',
+}
+
+new_members = ['david', 'lucy', 'john']
+
+for member in new_members:
+    if member == 'lucy':
+        favorite_languages[member] = 'go'
+    elif member == 'john':
+        favorite_languages[member] = 'java'
+    elif member == 'david':
+        favorite_languages[member] = 'python'
+
+print(f"\nList of names: ")
+for name in favorite_languages.keys():
+    print(f"{name.title()}")
+
+print(f"\nList of languages: ")
+for language in favorite_languages.values():
+    print(f"{language.title()}")
+print("\n")
+
+for name, language in favorite_languages.items():
+    print(f"{name.title()}'s favorite language is {language.title()}")
+
 print("\n")
