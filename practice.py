@@ -9,6 +9,11 @@ Lovers!"""
 print("Hello Python Lovers!")
 
 email = "tirupathinaidu07@gmail.com"
+
+print(dir(email))
+print(help(str))
+print(help(str.lower))
+
 print(email)
 print(email.upper())
 print(email.lower())
@@ -22,10 +27,25 @@ print("\n")
 
 first_name = 'Vasudev'
 last_name  = 'Bonu'
+
 print(f"Hi Python Lovers! My name is {last_name} {first_name}.")
 message = "Hello Python Lovers! My name is {} {}.".format(last_name, first_name)
 print(message)
+
+person = {'name': 'deva', 'age': 27}
+sentence = 'My name is {0} and I am {1} years old.'.format(person['name'].title(), person['age'])
+print(sentence)
+sentence = 'My name is {0[name]} and I am {0[age]} years old.'.format(person)
+print(sentence)
+
+tag = 'h1'
+text = 'This is a headline'
+
+sentence = '<{0}>{1}</{0}>'.format(tag, text)
+print(sentence)
+
 print("\n")
+
 
 name = ' vasudev '
 print(name)
@@ -40,8 +60,6 @@ print(len(name))
 print(name.index('i'))
 print(name[0])
 print(name[-1])
-print(name[0:4])
-print(name[::-1])
 print("\n")
 
 message = f"\tHello\n\tPython\n\tLovers!"
@@ -50,6 +68,30 @@ print("\n")
 
 memento = 'I can\'t remember to forget you!'
 print(f"{memento}\n")
+
+
+# Slicing
+my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+#          0, 1, 2, 3, 4, 5, 6, 7, 8, 9 
+#        -10,-9,-8,-7,-6,-5,-4,-3,-2,-1
+
+# list[start:end:step]
+
+print(my_list[0])
+print(my_list[9])
+print(my_list[-1])
+print(my_list[1:])
+print(my_list[2:-1:2])
+print(my_list[-2:1:-1])
+print(my_list[::1])
+print(my_list[::-1])
+print("\n")
+
+name = 'tirupathinaidu'
+print(name[0:4])
+print(name[::-1])
+print(name[-5:])
+print("\n")
 
 
 
