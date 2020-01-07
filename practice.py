@@ -13,12 +13,19 @@ print(email)
 print(email.upper())
 print(email.lower())
 print(email.title())
+print(email.capitalize())
+print(email.count('i'))
+print(email.find('i'))
+print(email.replace('07', '007'))
+print(email)
+print("\n")
 
 first_name = 'Vasudev'
 last_name  = 'Bonu'
 print(f"Hi Python Lovers! My name is {last_name} {first_name}.")
 message = "Hello Python Lovers! My name is {} {}.".format(last_name, first_name)
 print(message)
+print("\n")
 
 name = ' vasudev '
 print(name)
@@ -26,17 +33,26 @@ print(len(name))
 print(f"{name.rstrip()}: {len(name.rstrip())}")
 print(f"{name.lstrip()}: {len(name.lstrip())}")
 print(f"{name.strip()}: {len(name.strip())}")
+print("\n")
 
 name = 'tirupathinaidu'
+print(len(name))
+print(name.index('i'))
 print(name[0])
+print(name[-1])
 print(name[0:4])
 print(name[::-1])
+print("\n")
 
 message = f"\tHello\n\tPython\n\tLovers!"
 print(message)
+print("\n")
 
 memento = 'I can\'t remember to forget you!'
 print(f"{memento}\n")
+
+
+
 
 
 # Numbers
