@@ -359,52 +359,41 @@ print(values, type(values))
 print("\n")
 
 
-# collection_list = []
-# for number in range(1, 1000):
-#     fraction = 1/number
-#     list_str = list(str(fraction))
-#     collection_list.append(list_str)
 
-# min_list_len = []
-# for min_list in collection_list:
-#     min_list_len.append(len(min_list[2:]))
-#     y = set([x for x in min_list if min_list.count(x)>1])
+# Sets - set are values that are unordered and also have no duplicates
+cs_courses = {'history', 'math', 'physics', 'compsci'}
+print(cs_courses)
 
-# print(y)
+# Sets - remove duplicates
+cs_courses = {'physics', 'history', 'math', 'physics', 'compsci', 'math'}
+print(cs_courses)
 
-# print((min_list_len))
-# print(min_list_len.index(21))
+# Sets - membership test
+print('math' in cs_courses) # This can be done with lists and tuples but sets are optimized for this.
 
-# import math
-
-# for x in range(1, 401):
-#     for y in range(1, 401):
-#         for z in range(1, 401):
-#             if (x + y == math.sqrt(x+y) and x - y == math.sqrt(x-y) and x + z == math.sqrt(x+z) and x - z == math.sqrt(x-z) and y + z == math.sqrt(y+z) and y - z == math.sqrt(y-z)):
-#                 print(x + y + z)
-
-# import math
-
-# for x in range(1, 10001):
-#     for y in range(1, 10001):
-#         if (x + y == math.sqrt(x+y) and x - y == math.sqrt(x-y)):
-#             print(x + y)
+# Sets - intersection, difference, union methods
+cs_courses = {'history', 'math', 'physics', 'compsci'}
+art_courses = {'history', 'math', 'art', 'design'}
+print(cs_courses.intersection(art_courses))
+print(cs_courses.difference(art_courses))
+print(art_courses.difference(cs_courses))
+print(cs_courses.union(art_courses))
 
 
-# numbers = [7,2,3,4,1,4,5,6,7,8,9,2]
-
-# without_duplicatenumbers = []
-
-# for number in numbers:
-#     if numbers.count(number)>1:
-#         without_duplicatenumbers.append(number)
-
-# print(set(without_duplicatenumbers))
-
-# print("\n")
+print("\n")
 
 
-# name = 'vasudevatirupathinaiduvasudevatirupathinaidu'
+# Empty Lists
+empty_list = []
+empty_list = list()
 
-# print(name.count('i'))
+# Empty Tuples
+empty_list = ()
+empty_list = tuple()
 
+# Empty Sets
+empty_list = {} # This isn't right! it's a dict
+empty_list = set()
+
+
+print("\n")
