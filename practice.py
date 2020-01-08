@@ -314,8 +314,49 @@ print(copy_names_1)
 copy_names_1.append('chong')
 print(copy_names_1)
 print(names_1)
+print("\n")
 
 
+
+# Tuples - Immutable
+
+# Mutable
+list_1 = ['history', 'math', 'physics', 'compsci']
+list_2 = list_1
+
+print(list_1)
+print(list_2)
+
+list_1[0] = 'art'
+
+print(list_1)
+print(list_2)
+
+print("\n")
+
+# Immutable
+tuple_1 = ('history', 'math', 'physics', 'compsci')
+tuple_2 = tuple_1
+
+print(tuple_1)
+print(tuple_2)
+
+# tuple_1[0] = 'art'
+
+# print(tuple_1)
+# print(tuple_2)
+
+print("\n")
+
+
+# Tuples are technically defined by the presence of a comma
+values = (1)
+print(values, type(values))
+print(values + 3)
+values = (1,)
+print(values, type(values))
+
+print("\n")
 
 
 # collection_list = []
