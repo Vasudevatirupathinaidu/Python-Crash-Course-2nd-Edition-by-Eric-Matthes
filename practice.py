@@ -397,3 +397,208 @@ empty_list = set()
 
 
 print("\n")
+
+
+# Dictionaries - working with key-value pairs
+student = {
+    'name': 'deva',
+    'age': 27,
+    'courses': ['math', 'python'],
+}
+
+print(student['name'])
+
+# student['name'] = 'vasu'
+# student['phone'] = '555-55556'
+# print(student.get('phone', 'Not Found'))
+
+# update nultiple things at a time - update method
+# student.update({'name': 'vasu', 'age': 26, 'phone': '555-55556'})
+
+# print(student)
+
+# delete key-value
+
+# del student ['age']
+# print(student)
+
+age = student.pop('age')
+print(age)
+print(student)
+
+print("\n")
+
+
+# Loop through dictionaries - for loop
+student = {
+    'name': 'deva',
+    'age': 27,
+    'courses': ['math', 'python'],
+}
+
+print(len(student))
+print(student.items())
+print(student.keys())
+print(student.values())
+
+print("\n")
+
+
+for key, value in student.items():
+    print(key, value)
+print("\n")
+
+
+# Conditionals and Booleans - if,elif,else
+# Comparisons
+# Equal: ==
+# Not Equal: !=
+# Greater Than: >
+# Less Than: <
+# Greater or Equal: >=
+# Less or Equal: <=
+# Object Identity: is
+
+
+language = 'python'
+
+if language == 'python':
+    print("Condition was true")
+
+if 'p' in language:
+    print("Hello Python Lovers!")
+
+if 'l' not in language:
+    print("Hello All!")
+
+
+language = 'JavaScript'
+
+if language == 'python':
+    print("Language is python")
+elif language == 'JavaScript':
+    print("Language is JavsScript")
+else:
+    print("No Match")
+
+print("\n")
+
+# Logical operators and, or & not
+user = 'Admin'
+loggned_in = True
+
+if user == 'Admin' and loggned_in:
+    print("Admin page")
+else:
+    print("Bad creds")
+
+
+user = 'Admin'
+loggned_in = False
+
+if user == 'Admin' or loggned_in:
+    print("Admin page")
+else:
+    print("Bad creds")
+
+
+user = 'Admin'
+loggned_in = False
+
+if not loggned_in:
+    print("Admin page")
+else:
+    print("Bad creds")
+
+print("\n")
+
+
+# Object Identity: is
+a = [1,2,3]
+b = [1,2,3]
+print(a == b)
+
+print(id(a))
+print(id(b))
+print(a is b) # Here a and b objects are different in memory.
+
+a = [1,2,3]
+b = a
+print(a == b)
+
+print(id(a))
+print(id(b))
+print(a is b)
+
+print("\n")
+
+
+
+# False values
+    # False
+    # None
+    # Zero of any numeric type
+    # Any empty sequence. For example, '', (), [].
+    # Any empty mapping. For example, {}.
+
+condition = False
+
+if condition:
+    print("Evaluated to True")
+else:
+    print("Evaluated to False")
+
+print("\n")
+
+
+
+# Loops and Iterations - For/While Loops
+nums = [1, 2, 3, 4, 5]
+
+for num in nums:
+    print(num)
+print("\n")
+
+
+# break statement
+for num in nums:
+    if num == 3:
+        print("Found!")
+        break
+    print(num)
+
+print("\n")
+
+
+# continue statement
+for num in nums:
+    if num == 3:
+        print("Found!")
+        continue
+    print(num)
+
+print("\n")
+
+
+# loop within a loop
+nums = [1, 2, 3, 4, 5]
+
+for num in nums:
+    for letter in 'abc':
+        print(num, letter)
+    print("\n")
+
+
+# range
+for i in range(1, 11):
+    print(i)
+print("\n")
+
+
+# While loops
+x = 0
+
+while x < 10:
+    print(x)
+    x += 1
+print("\n")
