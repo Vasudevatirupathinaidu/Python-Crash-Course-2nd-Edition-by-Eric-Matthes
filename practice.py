@@ -10,8 +10,8 @@ print("Hello Python Lovers!")
 
 email = "tirupathinaidu07@gmail.com"
 
-print(dir(email))
-print(help(str))
+# print(dir(email))
+# print(help(str))
 print(help(str.lower))
 
 print(email)
@@ -70,32 +70,6 @@ memento = 'I can\'t remember to forget you!'
 print(f"{memento}\n")
 
 
-# Slicing
-my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-#          0, 1, 2, 3, 4, 5, 6, 7, 8, 9 
-#        -10,-9,-8,-7,-6,-5,-4,-3,-2,-1
-
-# list[start:end:step]
-
-print(my_list[0])
-print(my_list[9])
-print(my_list[-1])
-print(my_list[1:])
-print(my_list[2:-1:2])
-print(my_list[-2:1:-1])
-print(my_list[::1])
-print(my_list[::-1])
-print("\n")
-
-name = 'tirupathinaidu'
-print(name[0:4])
-print(name[::-1])
-print(name[-5:])
-print("\n")
-
-
-
-
 
 # Numbers
 num = 3
@@ -141,6 +115,9 @@ print("\n")
 num = 1
 num += 1
 print(num)
+# print(dir(num))
+# print(help(int))
+print("\n")
 
 num = -3
 print(abs(num))
@@ -156,6 +133,7 @@ print(int(num_1) + int(num_2))
 print("\n")
 
 
+
 # Lists
 print("Lists")
 number = 1345234156
@@ -164,15 +142,50 @@ print(str(number))
 print(f"List: {list(str(number))}")
 print("\n")
 
+numbers = [2, 6, 1, 3, 4, 7, 9]
+print(numbers[::-1])
+print(max(numbers))
+print(min(numbers))
+print(sum(numbers))
+print("\n")
+
+
+# Slicing
+my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+#          0, 1, 2, 3, 4, 5, 6, 7, 8, 9 
+#        -10,-9,-8,-7,-6,-5,-4,-3,-2,-1
+
+# list[start:end:step]
+
+print(my_list[0])
+print(my_list[9])
+print(my_list[-1])
+print(my_list[1:])
+print(my_list[2:-1:2])
+print(my_list[-2:1:-1])
+print(my_list[::1])
+print(my_list[::-1])
+print("\n")
+
+name = 'tirupathinaidu'
+print(name[0:4])
+print(name[::-1])
+print(name[-5:])
+print("\n")
+
 
 names = ['ching', 'chang','chung', 'ding', 'dang',]
 print(names)
+print(len(names))
+print(names.index('ding'))
+print('ding' in names)
 print(names[1])
 print(names[2:5])
 print(names[-2])
 print(names[-3:])
 print(names[::-1]) #reverse order
 print("\n")
+
 
 # add items
 
@@ -229,11 +242,78 @@ print(names)
 print("\n")
 
 
+# for loop
+names = ['ching', 'chang','chung', 'ding', 'dang']
+for name in names:
+    print(name)
+
+print("\n")
 
 
+for value in range(1, 5):
+    print(value)
+
+print("\n")
 
 
+numbers = list(range(1, 6))
+print(numbers)
 
+print("\n")
+
+
+squares = []
+for number in range (1, 11):
+    square = number ** 2
+    squares.append(square)
+print(squares)
+
+print("\n")
+
+
+# list comprehensions
+squares = [number**2 for number in range(1, 11)]
+print(squares)
+
+print("\n")
+
+
+# for loop - enumerate function
+for index, name in enumerate(names):
+    print(f"Index {index}: {name}")
+
+print("\n")
+
+# for loop - enumerate function, start value
+for index, name in enumerate(names, start = 1):
+    print(f"Index {index}: {name}")
+
+print("\n")
+
+# join method - its a string method
+# list to string
+name_str = ' - '.join(names)
+print(name_str)
+
+# string to list
+new_list = name_str.split(' - ')
+print(new_list)
+
+
+# copying a list using slice
+names_1 = ['ching', 'chang', 'chung']
+copy_names_1 = names_1[:]
+print(copy_names_1)
+copy_names_1.append('chong')
+print(copy_names_1)
+print(names_1)
+print("\n")
+
+copy_names_1 = names_1
+print(copy_names_1)
+copy_names_1.append('chong')
+print(copy_names_1)
+print(names_1)
 
 
 
