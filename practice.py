@@ -98,6 +98,12 @@ print("\n")
 
 
 # Numbers
+num = 3
+print(type(num))
+
+num = 3.14
+print(type(num))
+print("\n")
 
 # math operation
 print("Math")
@@ -106,8 +112,8 @@ print(4 - 2)
 print(5 * 2)
 print(8 / 4)
 print(10 % 2)
-print(6 // 2)
-print(7 // 2) #floor
+print(6 // 2) # floor division
+print(7 // 2) # floor division
 print(2 ** 8)
 print("\n")
 
@@ -132,15 +138,95 @@ print(x, y, z)
 print("\n")
 
 
+num = 1
+num += 1
+print(num)
+
+num = -3
+print(abs(num))
+num = 3.75
+print(round(num))
+print(round(num,1))
+print("\n")
+
+num_1 = "100"
+num_2 = "200"
+print(num_1 + num_2)
+print(int(num_1) + int(num_2))
+print("\n")
+
+
 # Lists
 print("Lists")
 number = 1345234156
 print(f"{number}")
 print(str(number))
 print(f"List: {list(str(number))}")
+print("\n")
 
 
+names = ['ching', 'chang','chung', 'ding', 'dang',]
+print(names)
+print(names[1])
+print(names[2:5])
+print(names[-2])
+print(names[-3:])
+print(names[::-1]) #reverse order
+print("\n")
 
+# add items
+
+names.extend(['pong'])
+print(names)
+print("\n")
+
+names.append('ping')
+print(names)
+print("\n")
+
+names.insert(2, 'bing')
+print(names)
+print("\n")
+
+# Change items
+names[2] = 'bang'
+print(names)
+print("\n")
+
+# remove items
+item_1 = names.pop(2)
+print(item_1)
+print(names)
+
+del names[-1]
+print(names)
+
+names.remove('pong')
+print(names)
+print("\n")
+
+# Sorted - temporary
+print(names)
+print(sorted(names))
+print(sorted(names, reverse = True))
+print(names)
+print("\n")
+
+# reverse
+print(names)
+names.reverse()
+print(names)
+names.reverse()
+print(names)
+print("\n")
+
+# sort - permanent
+print(names)
+names.sort()
+print(names)
+names.sort(reverse = True)
+print(names)
+print("\n")
 
 
 
