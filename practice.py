@@ -149,6 +149,11 @@ print(min(numbers))
 print(sum(numbers))
 print("\n")
 
+numbers = [1,2,2,2,3,3,5,6,7,4,4,8,4,9,4,15,14,10,11]
+print(max(numbers))
+print(min(numbers))
+print(max(set(numbers), key = numbers.count))
+print("\n")
 
 # Slicing
 my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
