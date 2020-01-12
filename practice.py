@@ -620,3 +620,20 @@ while x < 10:
     print(x)
     x += 1
 print("\n")
+
+
+
+# Functions
+
+# def hello_func():
+#     pass
+
+# hello_func()
+
+def hello_func():
+    return "Hello Function."
+
+print(hello_func())
+print(hello_func())
+print(hello_func())
+print(hello_func())
