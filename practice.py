@@ -63,6 +63,11 @@ print(name[-1])
 print(name[::-1]) # reverse
 print("\n")
 
+url = 'https://coreyms.com'
+print(url[(url.find('/')+2):])
+print(url[(url.find('/')+2):url.find('.')])
+print("\n")
+
 message = f"\tHello\n\tPython\n\tLovers!"
 print(message)
 print("\n")
