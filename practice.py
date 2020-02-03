@@ -60,6 +60,7 @@ print(len(name))
 print(name.index('i'))
 print(name[0])
 print(name[-1])
+print(name[::-1]) # reverse
 print("\n")
 
 message = f"\tHello\n\tPython\n\tLovers!"
