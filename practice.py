@@ -36,10 +36,21 @@ message = "Hello Python Lovers! My name is {} {}.".format(last_name, first_name)
 print(message)
 
 person = {'name': 'deva', 'age': 27}
+sentence = 'My name is {} and I am {} years old.'.format(person['name'].upper(), person['age'])
+print(sentence)
 sentence = 'My name is {0} and I am {1} years old.'.format(person['name'].title(), person['age'])
+print(sentence)
+sentence = 'My name is {0[name]} and I am {1[age]} years old.'.format(person, person)
 print(sentence)
 sentence = 'My name is {0[name]} and I am {0[age]} years old.'.format(person)
 print(sentence)
+sentence = 'My name is {name} and I am {age} years old.'.format(**person)
+print(sentence)
+
+l = ['vasu', 27]
+sentence = 'My name is {0[0]} and I am {0[1]} years old'.format(l)
+print(sentence)
+
 
 tag = 'h1'
 text = 'This is a headline'
@@ -47,8 +58,55 @@ text = 'This is a headline'
 sentence = '<{0}>{1}</{0}>'.format(tag, text)
 print(sentence)
 
+
+class person():
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+p1 = person('tiru', 27)
+
+sentence = 'My name is {0.name} and I am {0.age} years old.'.format(p1)
+print(sentence)
+
+
+sentence = 'My name is {name} and I am {age} years old.'.format(name='vasudev', age=27)
+print(sentence)
+
+
+# format numbers
+for i in range(1,11):
+    sentence = 'The value is {:03}'.format(i)
+    print(sentence)
 print("\n")
 
+import math
+print(math.pi)
+
+sentence = 'Pi is equal to {:.2f}'.format(math.pi)
+print(sentence)
+
+sentence = '1 MB is equal to {:,.2f} bytes'.format(1000**2)
+print(sentence)
+print("\n")
+
+# format date
+import datetime
+my_date = datetime.datetime(2020, 4, 2, 14, 30)
+print(my_date)
+
+sentence = '{:%B %d, %Y}'.format(my_date)
+print(sentence)
+
+# day of 1947 aug 15th
+import datetime
+mydate = datetime.datetime(1947, 8, 15, 12)
+print(mydate)
+sentence = '{0:%B %d, %Y} is {0:%A} and was the {0:%j} day of the year.'.format(mydate)
+print(sentence)
+
+
+print("\n")
 
 name = ' vasudev '
 print(name)
