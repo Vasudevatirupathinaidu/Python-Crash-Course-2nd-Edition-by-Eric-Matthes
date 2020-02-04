@@ -30,7 +30,9 @@ print("\n")
 
 first_name = 'Vasudev'
 last_name  = 'Bonu'
+age = 27
 
+print('My name is %s and I am %d years old.' %(first_name, age))
 print(f"Hi Python Lovers! My name is {last_name} {first_name}.")
 message = "Hello Python Lovers! My name is {} {}.".format(last_name, first_name)
 print(message)
@@ -196,7 +198,7 @@ print("\n")
 num_1 = "100"
 num_2 = "200"
 print(num_1 + num_2)
-print(int(num_1) + int(num_2))
+print(int(num_1) + int(num_2)) # Casting
 print("\n")
 
 
