@@ -450,15 +450,18 @@ print('math' in cs_courses) # This can be done with lists and tuples but sets ar
 cs_courses = {'history', 'math', 'physics', 'compsci'}
 art_courses = {'history', 'math', 'art', 'design'}
 print(cs_courses.intersection(art_courses))
+print(cs_courses & art_courses)
+
 print(cs_courses.difference(art_courses))
+print(cs_courses - art_courses)
+
 print(art_courses.difference(cs_courses))
+print(art_courses - cs_courses)
+
 print(cs_courses.union(art_courses))
+print(cs_courses | art_courses)
 print("\n")
 
-print(cs_courses | art_courses)
-print(cs_courses & art_courses)
-print(cs_courses - art_courses)
-print(art_courses - cs_courses)
 print(cs_courses ^ art_courses)
 
 
@@ -697,6 +700,134 @@ while x < 10:
     print(x)
     x += 1
 print("\n")
+
+
+
+# Python Tips and Tricks 
+# Ternary Conditionals
+condition = True
+x = 1 if condition else 0
+print(x)
+print("\n")
+
+
+# Underscore Placeholders
+number1 = 10_000_000_000
+number2 = 10_000_000
+total = number1 + number2
+print(f'{total:,.3f}')
+print("\n")
+
+
+# Enumerate
+names = ['ching', 'chang', 'chung', 'ding']
+for index, name in enumerate(names, start = 1):
+    print(index, name.title())
+print("\n")
+
+
+# Zip
+names = ['ching', 'chang', 'chung', 'ding']
+heroes = ['spiderman', 'superman', 'deadpool', 'batman']
+universes = ['marvel', 'DC', 'marvel', 'DC']
+
+for name, hero, universe in zip(names, heroes, universes):
+    print(f'{name.title()} is actually {hero.title()} from {universe.title()}')
+print("\n")
+
+for value in zip(names, heroes, universes):
+    print(value)
+    print(type(value))
+print("\n")
+
+
+# Unpacking
+# a, b = (1, 2)
+# print(a)
+# print(b)
+
+# a, _ = (1, 2)
+# print(a)
+
+# a, b, *c = (1, 2, 3, 4, 5)
+# print(a)
+# print(b)
+# print(c)
+
+# a, b, *_ = (1, 2, 3, 4, 5)
+# print(a)
+# print(b)
+
+a, b, *c, d = (1, 2, 3, 4, 5)
+print(a)
+print(b)
+print(c)
+print(d)
+print("\n")
+
+
+
+# Ternary Conditionals
+condition = True
+x = 1 if condition else 0
+print(x)
+print("\n")
+
+
+# Underscore Placeholders
+number1 = 10_000_000_000
+number2 = 10_000_000
+total = number1 + number2
+print(f'{total:,.3f}')
+print("\n")
+
+
+# Enumerate
+names = ['ching', 'chang', 'chung', 'ding']
+for index, name in enumerate(names, start = 1):
+    print(index, name.title())
+print("\n")
+
+
+# Zip
+names = ['ching', 'chang', 'chung', 'ding']
+heroes = ['spiderman', 'superman', 'deadpool', 'batman']
+universes = ['marvel', 'DC', 'marvel', 'DC']
+
+for name, hero, universe in zip(names, heroes, universes):
+    print(f'{name.title()} is actually {hero.title()} from {universe.title()}')
+print("\n")
+
+for value in zip(names, heroes, universes):
+    print(value)
+    print(type(value))
+print("\n")
+
+
+# Unpacking
+# a, b = (1, 2)
+# print(a)
+# print(b)
+
+# a, _ = (1, 2)
+# print(a)
+
+# a, b, *c = (1, 2, 3, 4, 5)
+# print(a)
+# print(b)
+# print(c)
+
+# a, b, *_ = (1, 2, 3, 4, 5)
+# print(a)
+# print(b)
+
+a, b, *c, d = (1, 2, 3, 4, 5)
+print(a)
+print(b)
+print(c)
+print(d)
+print("\n")
+
 
 
 
