@@ -212,6 +212,7 @@ print(f"List: {list(str(number))}")
 print("\n")
 
 numbers = [2, 6, 1, 3, 4, 7, 9]
+print(numbers.index(3))
 print(numbers[::-1])
 print(max(numbers))
 print(min(numbers))
@@ -452,6 +453,13 @@ print(cs_courses.intersection(art_courses))
 print(cs_courses.difference(art_courses))
 print(art_courses.difference(cs_courses))
 print(cs_courses.union(art_courses))
+print("\n")
+
+print(cs_courses | art_courses)
+print(cs_courses & art_courses)
+print(cs_courses - art_courses)
+print(art_courses - cs_courses)
+print(cs_courses ^ art_courses)
 
 
 print("\n")
