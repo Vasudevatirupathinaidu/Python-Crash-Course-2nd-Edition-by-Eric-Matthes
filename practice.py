@@ -160,6 +160,11 @@ print(7 // 2) # floor division
 print(2 ** 8)
 print("\n")
 
+# Sep(seperator) parameter
+print("There are <", 2**32, "> possibilities!", sep="")
+print('deva07','gamil.com', sep="@")
+
+
 # BIDMAS
 print("BIDMAS")
 print(4 + 5 * 2)
