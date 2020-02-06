@@ -300,6 +300,11 @@ print(sorted(names, reverse = True))
 print(names)
 print("\n")
 
+li = [-6, -5, -4, 1, 2, 3]
+s_li = sorted(li, key=abs)
+print(s_li)
+print("\n")
+
 # reverse
 print(names)
 names.reverse()
@@ -497,7 +502,7 @@ print(student['name'])
 # student['phone'] = '555-55556'
 # print(student.get('phone', 'Not Found'))
 
-# update nultiple things at a time - update method
+# update multiple things at a time - update method
 # student.update({'name': 'vasu', 'age': 26, 'phone': '555-55556'})
 
 # print(student)
@@ -624,7 +629,7 @@ print("\n")
     # None
     # Zero of any numeric type
     # Any empty sequence. For example, '', (), [].
-    # Any empty mapping. For example, {}.
+    # Any empty mapping or empty dictionary. For example, {}.
 
 condition = False
 
@@ -764,71 +769,6 @@ print(b)
 print(c)
 print(d)
 print("\n")
-
-
-
-# Ternary Conditionals
-condition = True
-x = 1 if condition else 0
-print(x)
-print("\n")
-
-
-# Underscore Placeholders
-number1 = 10_000_000_000
-number2 = 10_000_000
-total = number1 + number2
-print(f'{total:,.3f}')
-print("\n")
-
-
-# Enumerate
-names = ['ching', 'chang', 'chung', 'ding']
-for index, name in enumerate(names, start = 1):
-    print(index, name.title())
-print("\n")
-
-
-# Zip
-names = ['ching', 'chang', 'chung', 'ding']
-heroes = ['spiderman', 'superman', 'deadpool', 'batman']
-universes = ['marvel', 'DC', 'marvel', 'DC']
-
-for name, hero, universe in zip(names, heroes, universes):
-    print(f'{name.title()} is actually {hero.title()} from {universe.title()}')
-print("\n")
-
-for value in zip(names, heroes, universes):
-    print(value)
-    print(type(value))
-print("\n")
-
-
-# Unpacking
-# a, b = (1, 2)
-# print(a)
-# print(b)
-
-# a, _ = (1, 2)
-# print(a)
-
-# a, b, *c = (1, 2, 3, 4, 5)
-# print(a)
-# print(b)
-# print(c)
-
-# a, b, *_ = (1, 2, 3, 4, 5)
-# print(a)
-# print(b)
-
-a, b, *c, d = (1, 2, 3, 4, 5)
-print(a)
-print(b)
-print(c)
-print(d)
-print("\n")
-
-
 
 
 # Functions
