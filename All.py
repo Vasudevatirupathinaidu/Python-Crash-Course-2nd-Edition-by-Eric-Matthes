@@ -269,6 +269,21 @@ print(min(numbers))
 print(max(set(numbers), key = numbers.count))
 print("\n")
 
+numbers = [2,2,1,1,3,3,6,6,7,7,8,8,2,6]
+# print(max(numbers))
+# print(min(numbers))
+# print(sum(numbers))
+print(max(set(numbers), key=numbers.count))
+
+for i in range(len(numbers)):
+    number = max(set(numbers), key=numbers.count)
+    print(number, numbers.count(number))
+    if numbers.count(number) == 1:
+        break
+    numbers.remove(number)
+
+print('\n')
+
 # Slicing
 my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 #          0, 1, 2, 3, 4, 5, 6, 7, 8, 9 
@@ -559,6 +574,7 @@ print(student['name'])
 
 # print(student)
 
+
 # delete key-value
 
 # del student ['age']
@@ -588,6 +604,27 @@ print("\n")
 
 for key, value in student.items():
     print(key, value)
+print("\n")
+
+
+person = {
+    'name': 'vasu',
+    'age': 27,
+    'hobbies': ['chess', 'drawing', 'reading'],
+    'address': {
+        'street': 'chocolate factory road',
+        'city': 'bangalore',
+        'state': 'karnataka',
+        'pincode': 530068
+    },
+    'favorite': [{'food': 'dosa'}, 
+    {'cricket': 'sachin','tennis':'roger federer'}]
+
+}
+
+for x in person['favorite']:
+    for key, value in x.items():
+        print(key.title(), value, sep=" - ")
 print("\n")
 
 
