@@ -13,3 +13,5 @@ def greet_user(username):
 
 greet_user('deva')
 greet_user('vasu')
+
+# Note: username is a parameter and 'deva', 'vasu' are referred as arguments
