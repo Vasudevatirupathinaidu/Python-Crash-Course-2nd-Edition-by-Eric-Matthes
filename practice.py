@@ -1,5 +1,5 @@
 # Python Crash Course
-
+# http://online-courses.club/category/topics/2d-drawing/
 """Hello 
 Python 
 Lovers!"""
@@ -176,6 +176,8 @@ print("\n")
 print("Underscore in numbers")
 universe_age = 14_000_000_000
 print(universe_age)
+print("{:,.2f}".format(100_000_000_00))
+print(f"{10000000000:,.2f}")
 print("\n")
 
 
