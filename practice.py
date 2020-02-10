@@ -148,6 +148,7 @@ num = 3.14
 print(type(num))
 print("\n")
 
+
 # math operation
 print("Math")
 print(2 + 3)
@@ -403,6 +404,14 @@ print(copy_names_1)
 print(names_1)
 print("\n")
 
+toppings = ['pepper', 'mushroom', 'onions']
+toppings1 = toppings.copy()
+print(id(toppings))
+print(id(toppings1))
+toppings.append('chilli pepper')
+print(toppings)
+print(toppings1)
+print("\n")
 
 
 # Tuples - Immutable
@@ -555,6 +564,7 @@ print("\n")
 # Greater or Equal: >=
 # Less or Equal: <=
 # Object Identity: is
+
 
 
 language = 'python'
