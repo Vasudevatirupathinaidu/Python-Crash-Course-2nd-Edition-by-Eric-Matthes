@@ -4,6 +4,42 @@
 Python 
 Lovers!"""
 
+# dir and help functions
+name = 'deva'
+age = 27
+toppings = ['pepper', 'mushroom', 'onions']
+hobbies = ('chess', 'drawing', 'story writing')
+numbers = {1, 4, 5, 2, 7, 1, 2, 9, 6, 9, 8, 5}
+person = {
+    'name': 'vasu',
+    'age': 26
+}
+# print(dir(name))
+# print(type(name))
+# print(help(name.join))
+
+# print(dir(age))
+# print(type(age))
+# print(help(age.denominator))
+
+# print(dir(toppings))
+# print(type(toppings))
+# print(help(toppings.copy))
+
+# print(dir(hobbies))
+# print(type(hobbies))
+# print(help(hobbies.index))
+
+# print(dir(numbers))
+# print(type(numbers))
+# print(help(numbers.difference))
+
+# print(dir(person))
+# print(type(person))
+# print(help(person.fromkeys))
+print('\n'*2)
+
+
 # String
 
 print("Hello Python Lovers!")
