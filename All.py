@@ -4,6 +4,28 @@
 Python 
 Lovers!"""
 
+# Snippet
+# name = 'deva'
+# age = 27
+# toppings = ['pepper', 'mushroom', 'onions', 'chilli powder']
+# hobbies = ('chess', 'drawing', 'story writing')
+# numbers = {1, 4, 5, 2, 7, 1, 2, 9, 6, 9, 8, 5}
+# person = {
+#     'name': 'vasu',
+#     'age': 27,
+#     'hobbies': ['chess', 'drawing', 'reading'],
+#     'address': {
+#         'street': 'chocolate factory road',
+#         'city': 'bangalore',
+#         'state': 'karnataka',
+#         'pincode': 530068
+#     },
+#     'favorite': [{'food': 'dosa'}, 
+#     {'cricket': 'sachin','tennis':'roger federer'}]
+# }
+
+
+
 # dir and help functions
 name = 'deva'
 age = 27
