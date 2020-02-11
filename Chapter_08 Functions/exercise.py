@@ -12,15 +12,28 @@ favorite_book('thinking in numbers', 'daniel tammet')
 print("\n")
 
 
-# # T-Shirt
-# def make_shirt(size, message):
-#     print(f"My chest size of the shirt is {size} inches.")
-# make_shirt(45)
-# make_shirt(size=45)
-# print("\n")
+# T-Shirt
+def make_shirt(size, message):
+    print(f"\nI am going to make a {size} t-shirt.")
+    print(f"\nIt will say, {message}.")
+make_shirt('large', 'I Love Python')
+make_shirt(message="I prefer medium size t-shirt", size='medium')
+print("\n")
 
-# # Large Shirts
-# def make_Shirt(size='large'):
-#     if size == 'large':
-#         print('I Love Python')
-#     elif size == 'medium':
+# Large Shirts
+def make_shirt(size='large', message="I Love Python"):
+    print(f"\nI am going to make a {size} t-shirt.")
+    print(f"It will say, '{message}'.")
+make_shirt()
+make_shirt(size='medium')
+make_shirt('small', 'Long time no see')
+print("\n")
+
+# Cities
+def describe_city(city, country = 'India'):
+    print(f"\n{city} is in {country}.")
+
+describe_city('Vizag')
+describe_city(city = 'Bangalore')
+describe_city(city = 'California', country = 'USA')
+
