@@ -159,3 +159,44 @@ send_messages(messages[:])
 print(f"\nNew List: {sent_messages}")
 print(f"Original List: {messages}")
 print("\n")
+
+
+# Sandwiches
+print("Sandwiches:")
+def make_sandwich(*items):
+    """List of items a person wants on a sandwich"""
+    print("\nI want below items: ")
+    for item in items:
+        print(f"I want {item} item on a sandwich.")
+
+make_sandwich('corn')
+make_sandwich('chicken', 'corn', 'cheese')
+make_sandwich('paneer', 'tomato')
+print("\n")
+
+
+# User Profile:
+print("User Profile: ")
+def bulid_profile(first, last, **user_info):
+    """Bulid a dictionary containing everything we know about a user."""
+    user_info['first_name'] = first
+    user_info['last_name'] = last
+    return user_info
+
+user_profile = bulid_profile('Vasudev', 'Bonu', age = 27,
+    hobbies = 'drawing, chess', favorite_fooditem = 'Dosa')
+print(user_profile)
+print("\n")
+
+
+# Cars
+print("Cars: ")
+def make_car(manufacturer, modelname, **car_info):
+    """Bulid a dictionary containing everything we know about a car."""
+    car_info['manufacturer'] = manufacturer
+    car_info['modelname'] = modelname
+    return car_info
+
+car = make_car('subaru', 'outback', color='blue', tow_package=True)
+print(car)
+print("\n")
