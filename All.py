@@ -77,9 +77,16 @@ print(email.upper())
 print(email.lower())
 print(email.title())
 print(email.capitalize())
-print(email.count('i'))
+print('@' in email)
+print(email[::-1])
+print(email[:email.find('0')])
+print(email[email.find('@'):])
+print(email[email.find('0'):(email.find('7')+1)])
+print(email[email.find('.'):])
 print(email.find('i'))
 print(email.find('i', 2, 13)) # string.find(value, start, end)
+print(email.count('i'))
+print(email.count('i',0,9)) # string.count(substring, start=..., end=...)
 print(email.replace('07', '007'))
 print(email.replace('a', 'A'))
 print(email.replace('a', 'A', 1)) # string.replace(oldvalue, newvalue, count)
@@ -386,6 +393,16 @@ s_li = sorted(li, key=abs)
 print(s_li)
 print("\n")
 
+py_list = ['ejkajd', 'ahj', 'uhafkjhafjnajdbjk', 'oajfafyad', 'ioiqworjqifhh']
+print(sorted(py_list, key=len))
+print("\n")
+
+strs = ['aa', 'BB', 'zz', 'CC']
+print('B'<'a')
+print(sorted(strs))
+print(sorted(strs, key=str.lower))
+print("\n")
+
 # reverse
 print(names)
 names.reverse()
@@ -402,6 +419,33 @@ names.sort(reverse = True)
 print(names)
 print("\n")
 
+def sortSecond(val):
+    return val[1]
+list1 = [(1,2), (3,3), (1,1)]
+list1.sort(key = sortSecond)
+print(list1)
+
+list1.sort(key = sortSecond, reverse=True)
+print(list1)
+print("\n")
+
+letters = {
+    'D':4,
+    'A':1,
+    'P':16,
+    'B':2
+}
+print(sorted(letters))
+print("\n")
+
+letters = {
+    4:'D',
+    1:'A',
+    16:'P',
+    2:'B'
+}
+print(sorted(letters))
+print("\n")
 
 # for loop
 names = ['ching', 'chang','chung', 'ding', 'dang']
