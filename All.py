@@ -292,13 +292,13 @@ print(min(numbers))
 print(sum(numbers))
 print("\n")
 
-numbers = [1,2,2,2,3,3,5,6,7,4,4,8,4,9,4,15,14,10,11]
+numbers = [1, 2, 2, 2, 3, 3, 5, 6, 7, 4, 4, 8, 4, 9, 4, 1, 9, 4, 5, 3, 2, 1, 1, 9, 5, 8, 3, 2, 3, 7, 6, 5, 8, 7, 8, 2, 1, 1, 9, 5, 8, 3, 2, 3, 7, 6, 4, 1, 1, 2, 5, 6, 4, 9, 8]
 print(max(numbers))
 print(min(numbers))
 print(max(set(numbers), key = numbers.count))
 print("\n")
 
-numbers = [2,2,1,1,3,3,6,6,7,7,8,8,2,6]
+numbers = [2, 2, 1, 1, 3, 3, 6, 6, 7, 7, 8, 8, 2, 6]
 # print(max(numbers))
 # print(min(numbers))
 # print(sum(numbers))
@@ -428,6 +428,15 @@ print(list1)
 list1.sort(key = sortSecond, reverse=True)
 print(list1)
 print("\n")
+
+strs = ['xc', 'zb', 'yd' ,'wa']
+
+def MyFn(s):
+    return s[-1]
+
+print(MyFn(strs))
+print("\n")
+
 
 letters = {
     'D':4,
