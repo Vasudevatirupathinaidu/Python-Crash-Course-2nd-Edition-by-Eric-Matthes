@@ -873,6 +873,193 @@ print("\n")
 
 
 
+# Python Built-in functions
+# abs() - absolute value
+print(abs(-9))
+print(abs(5))
+print(abs(0))
+print("\n")
+
+# bool()
+print(bool(""))
+print(bool(" "))
+print(bool(3))
+print(bool("t"))
+print(bool(-4))
+print(bool(None))
+print(bool(0))
+print("\n")
+
+''' The difference between the two is that eval
+returns a value (something that you can save in a variable), whereas exec does not.'''
+
+# eval() - evaluate
+print(eval("34*74"))
+eval('print("wow")')
+cal = eval(input("Enter a calculation: "))
+print(cal)
+
+# exec()
+my_small_program = '''print('ham')
+print('sandwich')'''
+exec(my_small_program)
+
+# creating a test file
+test_file = open(r'C:\Users\vasudev\Desktop\hello\hi.txt')
+read_file = test_file.read()
+print(read_file)
+
+test_file_1 = open(r'C:\Users\vasudev\Desktop\hello\hola.txt', 'w')
+test_file_1.write("The Law of Life is the Law of Belief.")
+
+test_file_1 = open(r'C:\Users\vasudev\Desktop\hello\hola.txt')
+read = test_file_1.read()
+print(read)
+test_file_1.close()
+
+
+# Useful python modules
+
+# Making Copies with the copy Module
+import copy
+
+class Animal:
+    def __init__(self, species, number_of_legs, color):
+        self.species = species
+        self.number_of_legs = number_of_legs
+        self.color = color
+
+# harry = Animal('hippogriff', 6, 'pink')
+
+# harriet = copy.copy(harry)
+
+# print(harriet.species)
+
+harry = Animal('hippogriff', 6, 'pink')
+carrie = Animal('chimera', 4, 'green polka dots')
+billy = Animal('bogill', 0, 'pasley')
+
+# copy.copy(list)
+# my_animals = [harry, carrie, billy]
+# more_animals = copy.copy(my_animals)
+
+# # print(more_animals[1].species)
+# # print(my_animals[0].species)
+
+# my_animals[0].species = 'ghoul'
+# print(my_animals[0].species)
+# print(more_animals[0].species)
+# print(id(my_animals[0]))
+# print(id(more_animals[0]))
+
+# copy.deepcopy(list)
+my_animals = [harry, carrie, billy]
+more_animals = copy.deepcopy(my_animals)
+
+# print(more_animals[1].species)
+# print(my_animals[0].species)
+
+my_animals[0].species = 'ghoul'
+print(my_animals[0].species)
+print(more_animals[0].species)
+print(id(my_animals[0]))
+print(id(more_animals[0]))
+
+
+# Keep track of keywords with the keyword module
+import keyword
+print(keyword.iskeyword('if'))
+print(keyword.iskeyword('hi'))
+print(keyword.kwlist)
+
+
+# random module
+# Guessing number
+import random
+num = random.randint(1, 100)
+
+while True:
+    print('Guess a number between 1 and 100')
+    guess = input()
+    i = int(guess)
+    if i == num:
+        print("You guessed right")
+        break
+    elif i < num:
+        print("Try higher")
+    elif i > num:
+        print("Try lower")
+
+# Using choice to pick a randoom item from a list
+import random
+desserts = ['ice cream', 'pancakes', 'brownies', 'cookies', 'candy']
+
+print(random.choice(desserts))
+
+# Using shuffle to shuffle a list
+import random
+desserts = ['ice cream', 'pancakes', 'brownies', 'cookies', 'candy']
+
+random.shuffle(desserts)
+print(desserts)
+
+# Controlling the shell with the sys module
+import sys
+sys.exit()
+
+# Reading with the stdin object
+import sys
+
+print("What's your age? ")
+message = int(sys.stdin.readline())
+
+if message < 10:
+    print("Hey kid!")
+elif message >= 10 and message < 30:
+    print('Ho!! Boy!')
+else:
+    print("Ho! Man!")
+
+# Writing with the stdout object
+import sys
+sys.stdout.write("What does a fish say when it swims into a wall? Dam.\n")
+message = sys.stdout.write("What does a fish say when it swims into a wall? Dam.")
+print(message)
+
+# time module
+import time
+print(time.localtime()) # returns the current date and time as an object
+print(time.localtime()[0])
+print(time.asctime()) # takes a date as a tuple
+
+# sleep()
+import time
+for num in range(1, 21):
+    print(num)
+    time.sleep(1)
+
+# Using the pickle module to save information
+import pickle
+
+game_data = {
+    'player_position': 'N23 E45',
+    'pockets': ['keys', 'pocket knife', 'polished stone'],
+    'backpack': ['rope', 'hammer', 'apple'],
+    'money': 158.50
+}
+
+save_file = open(r'C:\Users\vasudev\Desktop\save.dat', 'wb')
+
+pickle.dump(game_data, save_file)
+save_file.close()
+
+load_file = open(r'C:\Users\vasudev\Desktop\save.dat', 'rb')
+
+loaded_game_data = pickle.load(load_file)
+load_file.close()
+
+
+
 # Python Tips and Tricks 
 # Ternary Conditionals
 condition = True

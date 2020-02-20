@@ -281,3 +281,63 @@ print("\n")
 
 
 # Battery Upgrade
+
+
+
+# Dice
+import random
+
+class Die:
+    def __init__(self, sides=6):
+        self.sides = sides
+
+    def roll_die(self):
+        if self.sides == 10 or self.sides == 20 or self.sides == 6:
+            print(f"The number of sides the die has - {self.sides}")
+            for x in range(10):
+                print(f"Random number: {random.randint(1, self.sides)}")
+        else:
+            print(f"The number of sides the die has - {self.sides}")
+            print(f"Random number: {random.randint(1, self.sides)}")
+
+die_1 = Die(6)
+die_1.roll_die()
+print("\n")
+
+die_2 = Die(10)
+die_2.roll_die()
+print("\n")
+
+die_3 = Die(20)
+die_3.roll_die()
+print("\n")
+
+
+# Lottery
+print("Lottery: ")
+
+from random import choice
+
+class Lottery:
+    def __init__(self, num_and_letters=[]):
+        self.num_and_letters = num_and_letters
+
+    def prize(self):
+        self.matching = []
+
+        for num_letter in range(4):
+            x = choice(self.num_and_letters)
+            self.matching.append(x)
+            self.num_and_letters.remove(x)
+
+        print(f"If any ticket matches these four numbers or letters {self.matching} wins a prize.")
+
+lottery_ticket_1 = Lottery()
+
+lottery_ticket_1.num_and_letters = [1,2,3,4,5,6,7,8,9,10,'L','E','V','O']
+
+lottery_ticket_1.prize()
+print("\n")
+
+
+# Lottery Analysis
