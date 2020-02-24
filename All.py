@@ -4,7 +4,7 @@
 Python 
 Lovers!"""
 
-# Snippet
+# Data for practice
 # name = 'deva'
 # age = 27
 # toppings = ['pepper', 'mushroom', 'onions', 'chilli powder']
@@ -65,6 +65,20 @@ print('\n'*2)
 # String
 
 print("Hello Python Lovers!")
+
+
+name = ' vasudeva tirupathi naidu '
+print(name)
+
+print(name.upper())
+print(name.capitalize())
+print(name.lower())
+print(name, len(name), sep='-->')
+print(name.rstrip(), len(name.rstrip()), sep='-->')
+print(name.lstrip(), len(name.lstrip()), sep='-->')
+print(name.strip(), len(name.strip()), sep='-->')
+print("\n")
+
 
 email = "tirupathinaidu07@gmail.com"
 
@@ -226,9 +240,15 @@ print(7 // 2) # floor division
 print(2 ** 8)
 print("\n")
 
-# Sep(seperator) parameter
+# Print function - Sep(seperator) parameter
 print("There are <", 2**32, "> possibilities!", sep="")
 print('deva07','gamil.com', sep="@")
+print("\n")
+
+# Print function end parameter
+for x in range(1,11):
+    print(x, end=' ')
+print("\n")
 
 
 # BIDMAS
