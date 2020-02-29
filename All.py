@@ -36,6 +36,25 @@ person = {
     'name': 'vasu',
     'age': 26
 }
+
+
+# print(dir(str))
+# print('\n')
+# print(dir(int))
+# print('\n')
+# print(dir(list))
+# print("\n")
+# print(dir(set))
+# print("\n")
+# print(dir(tuple))
+# print("\n")
+# print(dir(dict))
+# print("\n")
+# print(dir(float))
+# print("\n")
+# print(dir(complex))
+# print("\n")
+
 # print(dir(name))
 # print(type(name))
 # print(help(name.join))
