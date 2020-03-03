@@ -239,13 +239,23 @@ print(f"{memento}\n")
 
 
 # Numbers
+# int
 num = 3
 print(type(num))
+print("\n")
 
+# float
 num = 3.14
 print(type(num))
 print("\n")
 
+# imaginary
+z = 2+3j
+print(z)
+print(type(z))
+print(z.real)
+print(z.imag)
+print("\n")
 
 # math operation
 print("Math")
@@ -646,10 +656,9 @@ print(art_courses - cs_courses)
 
 print(cs_courses.union(art_courses))
 print(cs_courses | art_courses)
-print("\n")
 
 print(cs_courses ^ art_courses)
-
+print(cs_courses.symmetric_difference(art_courses))
 
 print("\n")
 
