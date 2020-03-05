@@ -1,0 +1,6 @@
+In python i have learned about different data types.
+In python i have learned about for/while loops.
+In python i have learned about conditional statements.
+In python i have learned about functions.
+In python i have learned about classes and objects(instances).
+In python i have learned about different modules and how to import them.
