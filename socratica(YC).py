@@ -1,3 +1,22 @@
+
+import sys,os
+print(sys.executable)
+print("\n")
+print(sys.path)
+print("\n")
+print(sys.path[0])
+print("\n")
+print(os.listdir())
+print("\n")
+print(os.path)
+print("\n")
+print(os.getcwd())
+print("\n")
+print(os.__file__)
+print("\n")
+
+
+
 # print(dir())
 # print(dir(__builtins__))
 print("\n")
@@ -90,7 +109,7 @@ print("\n")
 '''
 -module: datetime
 -class: datetime
--method: strptime()
+-method: strptime() -->sringpasstime
 '''
 moon_landing = "7/20/1969"
 moon_landing = datetime.datetime.strptime(moon_landing, "%m/%d/%Y")
@@ -99,6 +118,13 @@ print(type(moon_landing))
 print("\n")
 
 help(datetime.datetime.strptime)
+print("\n")
+
+
+# Calendar
+import calendar
+print(calendar.isleap(2020))
+print(calendar.isleap(2017))
 print("\n")
 
 # Sets
@@ -133,7 +159,7 @@ print("\n")
 # Tuples can be made more quickly than lists
 import timeit
 list_test = timeit.timeit(stmt="[1, 2, 3, 4, 5]", number=1000000)
-tuple_test = timeit.timeit(stmt="[1, 2, 3, 4, 5]", number=1000000)
+tuple_test = timeit.timeit(stmt="(1, 2, 3, 4, 5)", number=1000000)
 print("List time = ", list_test)
 print("Tuple time = ", tuple_test)
 print("\n")
