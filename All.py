@@ -1184,6 +1184,80 @@ print(d)
 print("\n")
 
 
+# List Comprehensions
+
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+my_list = [n for n in range(1,11)]
+print(my_list)
+my_list = list(map(lambda n: n, range(1,11)))
+print(my_list)
+print("\n")
+
+my_list = [n*n for n in range(1,11)]
+print(my_list)
+my_list = list(map(lambda n: n*n, range(1,11)))
+print(my_list)
+print("\n")
+
+my_list = [n for n in range(1,11) if n%2 == 0]
+print(my_list)
+my_list = list(filter(lambda n: n%2 == 0, range(1,11)))
+print(my_list)
+print("\n")
+
+my_list = [(letter, num) for letter in 'abcd' for num in range(4)]
+print(my_list)
+print("\n")
+
+
+# Dictionary Comprehensions
+
+names = ['Bruce', 'Clark', 'Peter', 'Logan', 'Wade']
+heros = ['Batman', 'Superman', 'Spiderman', 'Wolverine', 'Deadpool']
+
+my_dict = {name: hero for name, hero in zip(names, heros) if name != 'Peter'}
+print(my_dict)
+print("\n")
+print(dict(zip(names, heros)))
+print("\n")
+print(list(zip(names, heros)))
+print("\n")
+print(set(zip(names, heros)))
+print("\n")
+print(tuple(zip(names, heros)))
+print("\n")
+
+
+# Set Comprehensions
+
+nums = [1,1,2,1,3,4,3,4,5,5,6,7,8,7,9,9]
+
+my_set = {n for n in nums}
+print(my_set)
+print("\n")
+
+
+# Generator Expressions
+# I want to yield 'n*n' for each 'n' in terms
+
+nums = [1,2,3,4,5,6,7,8,9,10]
+# def gen_func(nums):
+#     for n in nums:
+#         yield n*n
+
+# my_gen = gen_func(nums)
+
+# for i in my_gen:
+#     print (i)
+
+my_gen = (n*n for n in nums)
+
+for i in my_gen:
+    print(i)
+print("\n")
+
+
 # Functions
 
 # def hello_func():
