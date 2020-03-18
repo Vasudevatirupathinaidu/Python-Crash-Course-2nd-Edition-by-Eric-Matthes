@@ -20,6 +20,14 @@ print("\n")
 # print(dir(__builtins__))
 print("\n")
 
+# help('modules') # list of available modules
+print("\n")
+
+# Python Errors and Built-in Exceptions
+# errors = locals()['__builtins__']
+# print(dir(errors))
+
+
 help(pow)
 print("\n")
 
@@ -49,8 +57,6 @@ print(hex(10))
 print(0Xa)
 print("\n")
 
-# help('modules') # list of available modules
-print("\n")
 
 import math
 print(dir(math))
