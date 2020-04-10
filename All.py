@@ -4,6 +4,21 @@
 Python 
 Lovers!"""
 
+
+# print(dir())
+# print(dir(__builtins__))
+# help(locals)
+
+
+# help('modules') # list of available modules
+
+
+# Python Errors and Built-in Exceptions
+# errors = locals()['__builtins__']
+# print(dir(errors))
+
+
+
 # Data for practice
 # name = 'deva'
 # age = 27
@@ -98,8 +113,49 @@ print(name.lstrip(), len(name.lstrip()), sep='-->')
 print(name.strip(), len(name.strip()), sep='-->')
 print("\n")
 
+# The order of the characters in the string passed to strip() does not matter
+spam = 'SpamSpamBaconSpamEggsSpamSpam'
+spam.strip('ampS')
+print("\n")
 
 email = "tirupathinaidu07@gmail.com"
+
+greet = 'Hello, Deva!'
+email = "tirupathinaidu07@gmail.com"
+
+print(greet.upper())
+print(greet.lower())
+print(greet.isupper())
+print(greet.lower().islower())
+print(greet.isalpha())
+print('abcJHS'.isalpha())
+print(email.isalnum())
+print('tirupathinaidu 07'.isalnum())
+print('tirupathinaidu07'.isalnum())
+print('121323412'.isdecimal())
+print(' '.isspace())
+print('\n'.isspace())
+print('\t'.isspace())
+print('Vasu Deva'.istitle())
+
+print(email.startswith('t'))
+print(email.endswith('.com'))
+
+
+# Splitting strings with the partition() method
+message = 'tirupathinaidu07@gmail.com'.partition('@')
+print(message) # tuple of before , seperator(@), after substrings
+
+before, sep, after = 'Hello, world!'.partition(' ')
+print(before)
+print(after)
+
+message1 = 'hello, world!'.partition('XY')
+print(message1)
+
+message2 = 'hello, world!'.partition('o')
+print(message2)
+
 
 # print(dir(email))
 # print(help(str))
@@ -107,7 +163,9 @@ print(help(str.lower))
 
 print(email)
 print(email.upper())
+print(email.isupper())
 print(email.lower())
+print(email.islower())
 print(email.title())
 print(email.capitalize())
 print('@' in email)
@@ -118,6 +176,8 @@ print(email[email.find('0'):(email.find('7')+1)])
 print(email[email.find('.'):])
 print(email.find('i'))
 print(email.find('i', 2, 13)) # string.find(value, start, end)
+print(email.index('t'))
+print(email.index('t', 10, 20)) # string.index(value, start, end)
 print(email.count('i'))
 print(email.count('i',0,9)) # string.count(substring, start=..., end=...)
 print(email.replace('07', '007'))
@@ -130,7 +190,7 @@ first_name = 'Vasudev'
 last_name  = 'Bonu'
 age = 27
 
-print('My name is %s and I am %d years old.' %(first_name, age))
+print('My name is %s and I am %d years old.' %(first_name, age)) # String interpolation
 print(f"Hi Python Lovers! My name is {last_name} {first_name}.")
 message = "Hello Python Lovers! My name is {} {}.".format(last_name, first_name)
 print(message)
@@ -352,6 +412,7 @@ numbers = [2, 2, 1, 1, 3, 3, 6, 6, 7, 7, 8, 8, 2, 6]
 # print(min(numbers))
 # print(sum(numbers))
 print(max(set(numbers), key=numbers.count))
+print(max(set(numbers), key=lambda value: numbers.count(value)))
 
 for i in range(len(numbers)):
     number = max(set(numbers), key=numbers.count)
@@ -484,6 +545,8 @@ def MyFn(s):
     return s[-1]
 
 print(MyFn(strs))
+
+print(sorted(strs, key=lambda value: value[-1]))
 print("\n")
 
 

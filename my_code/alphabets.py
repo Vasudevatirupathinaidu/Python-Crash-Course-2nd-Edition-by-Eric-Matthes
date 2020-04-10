@@ -48,3 +48,17 @@ if letter_number1[1][1] == ' ' or letter_number1[1][1] == '.':
 
 print(f"Most repeated letter in quote2: {letter_number1[0][1]}")
 print("\n")
+
+
+# Unpacking operator
+numbers = [1, 2, 3]
+
+print([*'abc', *numbers])
+print(list('abc')+list(numbers))
+
+
+message = 'Thanks to the flexibility of Python and the powerful ecosystem of packages, the Azure CLI supports features such as autocompletion (in shells that support it), persistent credentials, JMESPath result parsing, lazy initialization, network-less unit tests, and more.'
+
+print(list(filter(lambda x: x.isalpha(),[*message])))
+
+# print(dir(str))
